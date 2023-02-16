@@ -34,7 +34,7 @@
 # чтобы просто проверять в какую группу попадает буква, а также просто
 # накапливать сумму очков.
 
-a = {
+dict = {
     1: "AEIOULNSTRААВЕИНОРСТ",
     2: "DGДКЛМПУ",
     3: "BCMPБГЁЬЯ",
@@ -48,7 +48,7 @@ text = input("Введите слово: ")
 summ = 0
 
 for i in range(0, len(text)):
-    for j in a:
-        if text[i].upper() in a[j]:
+    for j in dict:
+        if text[i].upper() in dict[j]:
             summ = summ + j
 print(summ)
